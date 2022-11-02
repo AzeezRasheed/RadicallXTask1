@@ -11,7 +11,7 @@ const internshipGuide = () => {
       <div className="absolute left-[311px] top-[57px] items-start w-[1000px]">
         <header className="flex justify-between items-center mb-6">
           <h1 className=" text-[32px] font-semibold">Internships</h1>
-          <button className="flex gap-2 capitalize bg-[#793EF5] rounded-xl py-[12px] px-[16px]">
+          <button className="flex gap-2 capitalize bg-[#793EF5] rounded-xl py-[12px] px-[16px] text-white">
             <img className="w-6" src={Square} alt="" />{" "}
             <span>create new internship</span>
           </button>

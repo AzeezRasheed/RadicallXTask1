@@ -3,18 +3,12 @@ import RadicalX from "../assets/RadicalX.png";
 import Dashboard from "../assets/dashboard-3.png";
 import Briefcase from "../assets/briefcase.png";
 import Settings from "../assets/setting-2.png";
+import {SlBookOpen} from 'react-icons/sl'
 import '../components/button.css'
-import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import ModelStar from "../assets/medal-star.png";
-import styled from "styled-components";
 
 const Overview = () => {
   const [clicked, setClicked] = useState('');
-
-
-  
-
-  // background:${isActive ? "#793EF5" : "#33d6a6"}
  
   return (
     <div className=" relative ">
@@ -27,6 +21,10 @@ const Overview = () => {
 
           <button className={`styleButton flex gap-2 ${clicked === 'apprenterships'  ? 'active' : ''} `} onClick={() => {setClicked('apprenterships')}}>
           <img src={ModelStar} alt="" /> <span>Apprenterships</span>
+          </button>
+
+          <button className={`styleButton flex gap-2 items-center ${clicked === 'internships'  ? 'active' : ''} `} onClick={() => {setClicked('internships')}}>
+           <SlBookOpen className="text-xl"/><span>Internships</span>
           </button>
 
           <button className={`styleButton flex gap-2 ${clicked === 'jobs'  ? 'active' : ''} `} onClick={() => {setClicked('jobs')}}>
